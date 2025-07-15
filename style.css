@@ -1,0 +1,189 @@
+/* style.css - Styling for the popup.html and content.js overlay */
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    width: 280px; /* Fixed width for the popup */
+}
+
+.container {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #f7931a; /* Bitcoin orange */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1::before {
+    content: '₿'; /* Bitcoin symbol */
+    font-size: 28px;
+    margin-right: 8px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.setting-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.setting-label {
+    font-weight: 600;
+    font-size: 15px;
+    color: #555;
+}
+
+/* Toggle Switch Styling */
+.toggle-container {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+}
+
+.toggle-switch {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-label {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 22px;
+}
+
+.toggle-label:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.toggle-switch:checked + .toggle-label {
+    background-color: #f7931a;
+}
+
+.toggle-switch:checked + .toggle-label:before {
+    transform: translateX(18px);
+}
+
+.status-text {
+    font-weight: 600;
+    margin-left: 10px;
+    min-width: 35px; /* Ensure consistent width */
+    text-align: right;
+}
+
+/* Radio Button Group Styling */
+.radio-group {
+    display: flex;
+    gap: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.radio-group input[type="radio"] {
+    display: none;
+}
+
+.radio-group label {
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.radio-group input[type="radio"]:checked + label {
+    background-color: #f7931a;
+    color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.current-rate {
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    background-color: #e6f7ff; /* Light blue background for rate */
+    border-radius: 8px;
+    border: 1px solid #b3e0ff;
+    color: #0056b3;
+}
+
+#btcRateDisplay {
+    font-weight: 600;
+    color: #007bff;
+}
+
+footer {
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 10px;
+}
+
+.footer-link {
+    color: #f7931a;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* New styling for the infotip bubble */
+.btc-infotip {
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    opacity: 0.95;
+    transition: opacity 0.2s ease-in-out;
+}

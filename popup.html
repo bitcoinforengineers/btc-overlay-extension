@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTC Overlay</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>₿ BTC Overlay</h1>
+        </header>
+        <main>
+            <div class="setting-item">
+                <label for="toggleSwitch" class="setting-label">Enable Overlay:</label>
+                <div class="toggle-container">
+                    <input type="checkbox" id="toggleSwitch" class="toggle-switch">
+                    <label for="toggleSwitch" class="toggle-label"></label>
+                </div>
+                <span id="statusText" class="status-text">Off</span>
+            </div>
+
+            <div class="setting-item">
+                <label class="setting-label">Display Mode:</label>
+                <div class="radio-group">
+                    <input type="radio" id="modeBtc" name="displayMode" value="btc" checked>
+                    <label for="modeBtc">BTC</label>
+                    <input type="radio" id="modeSats" name="displayMode" value="sats">
+                    <label for="modeSats">Sats</label>
+                </div>
+            </div>
+
+            <div class="current-rate">
+                Current BTC/USD Rate: <span id="btcRateDisplay">Loading...</span>
+            </div>
+        </main>
+        <footer>
+            <p>
+                <a href="https://bitcoinforengineers.com" target="_blank" class="footer-link">
+                    Learn more about Bitcoin for Engineers
+                </a>
+            </p>
+        </footer>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
