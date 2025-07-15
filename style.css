@@ -178,7 +178,8 @@ footer {
 /* New styling for the infotip bubble */
 .btc-infotip {
     background-color: #333;
-    color: white;
+    color: #f7931a; /* Bitcoin orange */
+    font-weight: bold; /* Make text bold */
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 12px;
