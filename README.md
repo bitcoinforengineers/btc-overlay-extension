@@ -1,5 +1,7 @@
-**BTC Overlay Chrome Extension
-**Overview
+*BTC Overlay Chrome Extension
+
+*Overview
+
 The "BTC Overlay" Chrome Extension is a powerful tool designed for Bitcoin enthusiasts and anyone looking to quickly understand the value of everyday purchases in Bitcoin terms. This Manifest V3 extension allows you to highlight any USD price on a webpage, and a small, non-intrusive infotip will instantly appear showing its equivalent in Bitcoin (₿) or Satoshis (sats). This on-demand approach ensures minimal browser resource consumption.
 Features
 * On-Demand Price Conversion: Highlight any dollar amount on a webpage to see its Bitcoin (₿) or Satoshi (sats) equivalent in a discreet infotip.
