@@ -15,8 +15,8 @@ Features
 
 
 ## Installation and Publishing
-1. Prepare Your Extension Files
-* Create a new folder on your computer (e.g., btc-overlay-extension).
+**1. Prepare Your Extension Files
+*** Create a new folder on your computer (e.g., btc-overlay-extension).
 * Save the following files into this folder:
    * manifest.json
    * background.js
@@ -27,8 +27,8 @@ Features
 * Create a subfolder named icons inside btc-overlay-extension.
 * Place Bitcoin logo images (e.g., bitcoin-16.png, bitcoin-48.png, bitcoin-128.png) in the icons folder. You can create simple PNGs from the ₿ emoji.
 
-2. Load for Local Testing (Developer Mode)
-* Open Google Chrome.
+**2. Load for Local Testing (Developer Mode)
+*** Open Google Chrome.
 * Navigate to chrome://extensions/.
 * Enable "Developer mode" (usually a toggle switch in the top right corner).
 * Click on the "Load unpacked" button.
@@ -36,15 +36,16 @@ Features
 * To update after making changes: Simply click the refresh (reload) button on your extension's card on the chrome://extensions/ page. You may also need to refresh any open webpages to see the changes in content.js.
 * Pin the Extension (Optional but Recommended): Click the puzzle piece icon (Extensions) in your Chrome toolbar. Find "BTC Overlay" and click the pin icon next to it to make it visible in your toolbar.
 
-3. Publish to the Chrome Web Store
-To make your extension available to others globally:
+**3. Publish to the Chrome Web Store
+**To make your extension available to others globally:
 * Create a ZIP File: Compress your entire btc-overlay-extension folder into a single .zip file. Ensure manifest.json is at the root of the ZIP.
 * Developer Account: You'll need a Google developer account. Sign up at the Chrome Web Store Developer Dashboard (one-time fee applies).
 * Upload Your Extension: Go to the Developer Dashboard, click "Add new item", and upload your .zip file.
 * Fill in Listing Details: Provide a detailed description, screenshots, promotional images, and other required information for your extension's listing. You can link https://bitcoinforengineers.com as your website URL.
 * Submit for Review: After filling in all details, submit your extension. The review process can take some time.
-4. Share Your Extension
-Once your extension is published, you'll receive a unique URL for its listing on the Chrome Web Store. You can find this link in your Chrome Web Store Developer Dashboard under "Your Items." Share this link on bitcoinforengineers.com and other platforms to allow users to easily install your extension.
+
+**4. Share Your Extension
+**Once your extension is published, you'll receive a unique URL for its listing on the Chrome Web Store. You can find this link in your Chrome Web Store Developer Dashboard under "Your Items." Share this link on bitcoinforengineers.com and other platforms to allow users to easily install your extension.
 
 ## Usage
 1. Click the ₿ icon in your Chrome toolbar to open the extension popup.
